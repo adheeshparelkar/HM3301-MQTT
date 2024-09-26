@@ -12,11 +12,11 @@ HM330X sensor;
 uint8_t buf[30];
 
 // WiFi and MQTT configuration
-const char* ssid = "VanHack.ca"; // Replace with your WiFi SSID
-const char* password = "MAKETHEPLANET"; // Replace with your WiFi password
-const char* mqttServer = "10.100.100.1"; // Replace with your MQTT broker address
+const char* ssid = "WIFI-SSID"; // Replace with your WiFi SSID
+const char* password = "WIFIPASSWORD"; // Replace with your WiFi password
+const char* mqttServer = "<MQTT-BROKER-ADDRESS>"; // Replace with your MQTT broker address
 const int mqttPort = 1883; // Replace with your MQTT broker port
-const char* mqttTopic = "/projects/airquality/maintable/hm3301"; // Topic to publish PM2.5 values
+const char* mqttTopic = "<MQTT-TOPIC>"; // Topic to publish PM2.5 values
 
 WiFiClient wifiClient;
 PubSubClient mqttClient(wifiClient);
